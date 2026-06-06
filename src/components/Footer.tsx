@@ -104,6 +104,9 @@ const Footer = ({ variant = 'light' }: FooterProps) => {
               <Link to="/automation" className={`text-xs font-medium ${linkCls}`}>
                 TIF Automations
               </Link>
+              <Link to="/careers" className={`text-xs font-medium ${linkCls}`}>
+                Careers
+              </Link>
               <Link to="/about" className={`text-xs font-medium ${linkCls}`}>
                 About Us
               </Link>

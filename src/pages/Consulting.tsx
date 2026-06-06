@@ -148,6 +148,13 @@ export default function Consulting() {
               >
                 About Us
               </Button>
+              <Button 
+                variant="ghost"
+                className="text-gray-700 hover:bg-[#2c3e2d]/10 font-medium"
+                onClick={() => navigate('/careers')}
+              >
+                Careers
+              </Button>
               <div className="flex items-center gap-3 border-l border-stone-300 pl-4">
                 <a 
                   href="https://www.linkedin.com/company/the-insight-foundry-official" 
@@ -217,6 +224,16 @@ export default function Consulting() {
                   }}
                 >
                   About Us
+                </Button>
+                <Button 
+                  variant="ghost"
+                  className="justify-start text-gray-700 hover:bg-[#2c3e2d]/10"
+                  onClick={() => {
+                    navigate('/careers');
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Careers
                 </Button>
                 <div className="flex items-center gap-4 px-3 py-2">
                   <span className="text-sm text-gray-500">Follow:</span>

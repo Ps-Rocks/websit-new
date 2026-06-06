@@ -9,6 +9,11 @@ import { useEffect } from "react";
 import Gateway from "./pages/Gateway";
 import Consulting from "./pages/Consulting";
 import Automation from "./pages/Automation";
+import Careers from "./pages/Careers";
+import CareersCmo from "./pages/CareersCmo";
+import CareersCto from "./pages/CareersCto";
+import CareersGrowthIntern from "./pages/CareersGrowthIntern";
+import CareersAssociateIntern from "./pages/CareersAssociateIntern";
 import BookingPage from "./pages/BookingPage";
 import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
@@ -49,6 +54,11 @@ const AnimatedRoutes = () => {
         <Route path="/consulting" element={<PageWrapper><Consulting /></PageWrapper>} />
         <Route path="/automation" element={<PageWrapper><Automation /></PageWrapper>} />
         <Route path="/book-call" element={<PageWrapper><BookingPage /></PageWrapper>} />
+        <Route path="/careers" element={<PageWrapper><Careers /></PageWrapper>} />
+        <Route path="/careers/cmo" element={<PageWrapper><CareersCmo /></PageWrapper>} />
+        <Route path="/careers/cto" element={<PageWrapper><CareersCto /></PageWrapper>} />
+        <Route path="/careers/growth-intern" element={<PageWrapper><CareersGrowthIntern /></PageWrapper>} />
+        <Route path="/careers/associate-consulting-intern" element={<PageWrapper><CareersAssociateIntern /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><AboutUs /></PageWrapper>} />
         <Route path="/privacy-policy" element={<PageWrapper><PrivacyPolicy /></PageWrapper>} />
         <Route path="/blog/gpt-automation" element={<PageWrapper><GptCaseStudy /></PageWrapper>} />

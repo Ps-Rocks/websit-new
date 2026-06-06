@@ -72,6 +72,13 @@ export default function Automation() {
               >
                 About Us
               </Button>
+              <Button 
+                variant="ghost"
+                className="text-stone-300 hover:bg-[#10b981]/10 hover:text-white font-medium"
+                onClick={() => navigate('/careers')}
+              >
+                Careers
+              </Button>
               <div className="flex items-center gap-3 border-l border-neutral-800 pl-4">
                 <a 
                   href="https://www.linkedin.com/company/the-insight-foundry-official" 
@@ -141,6 +148,16 @@ export default function Automation() {
                   }}
                 >
                   About Us
+                </Button>
+                <Button 
+                  variant="ghost"
+                  className="justify-start text-stone-300 hover:bg-[#10b981]/10 hover:text-white"
+                  onClick={() => {
+                    navigate('/careers');
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Careers
                 </Button>
                 <div className="flex items-center gap-4 px-3 py-2">
                   <span className="text-sm text-stone-500">Follow:</span>
