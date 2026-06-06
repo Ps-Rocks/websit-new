@@ -56,13 +56,13 @@ const openings = [
     ],
   },
   {
-    id: 'associate-intern',
-    title: 'Associate Consulting Intern',
+    id: 'associate-consultant-intern',
+    title: 'Associate Consultant Intern',
     department: 'Consulting',
     location: 'Remote',
     type: 'Internship',
     salary: 'Stipend + mentorship',
-    path: '/careers/associate-consulting-intern',
+    path: '/careers/associate-consultant-intern',
     summary:
       'Work alongside consulting teams on strategy, operational diagnostics, and client-ready deliverables.',
     bullets: [

@@ -58,7 +58,7 @@ const AnimatedRoutes = () => {
         <Route path="/careers/cmo" element={<PageWrapper><CareersCmo /></PageWrapper>} />
         <Route path="/careers/cto" element={<PageWrapper><CareersCto /></PageWrapper>} />
         <Route path="/careers/growth-intern" element={<PageWrapper><CareersGrowthIntern /></PageWrapper>} />
-        <Route path="/careers/associate-consulting-intern" element={<PageWrapper><CareersAssociateIntern /></PageWrapper>} />
+        <Route path="/careers/associate-consultant-intern" element={<PageWrapper><CareersAssociateIntern /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><AboutUs /></PageWrapper>} />
         <Route path="/privacy-policy" element={<PageWrapper><PrivacyPolicy /></PageWrapper>} />
         <Route path="/blog/gpt-automation" element={<PageWrapper><GptCaseStudy /></PageWrapper>} />
