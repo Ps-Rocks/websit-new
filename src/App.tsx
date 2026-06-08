@@ -21,6 +21,7 @@ import GptCaseStudy from "./pages/GptCaseStudy";
 import StartupScaling from "./pages/StartupScaling";
 import PositioningCost from "./pages/PositioningCost";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import InternshipTerms from "./pages/InternshipTerms";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +62,7 @@ const AnimatedRoutes = () => {
         <Route path="/careers/associate-consultant-intern" element={<PageWrapper><CareersAssociateIntern /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><AboutUs /></PageWrapper>} />
         <Route path="/privacy-policy" element={<PageWrapper><PrivacyPolicy /></PageWrapper>} />
+        <Route path="/internship-terms" element={<PageWrapper><InternshipTerms /></PageWrapper>} />
         <Route path="/blog/gpt-automation" element={<PageWrapper><GptCaseStudy /></PageWrapper>} />
         <Route path="/blog/startup-scaling" element={<PageWrapper><StartupScaling /></PageWrapper>} />
         <Route path="/blog/positioning-cost" element={<PageWrapper><PositioningCost /></PageWrapper>} />
