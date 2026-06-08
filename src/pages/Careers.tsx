@@ -212,13 +212,22 @@ const Careers = () => {
                   </div>
 
                   <div className="mt-6 flex flex-wrap items-center justify-start gap-4">
-                    <Button
-                      className="rounded-full bg-[#2c3e2d] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1f2f25]"
-                      onClick={() => navigate(job.path)}
-                    >
-                      Apply Now
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    {['growth-intern', 'associate-consultant-intern'].includes(job.id) ? (
+                      <Button
+                        className="rounded-full bg-stone-200 px-4 py-2 text-sm font-semibold text-stone-500 cursor-not-allowed"
+                        disabled
+                      >
+                        Closed
+                      </Button>
+                    ) : (
+                      <Button
+                        className="rounded-full bg-[#2c3e2d] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1f2f25]"
+                        onClick={() => navigate(job.path)}
+                      >
+                        Apply Now
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
