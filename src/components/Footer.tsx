@@ -110,6 +110,9 @@ const Footer = ({ variant = 'light' }: FooterProps) => {
               <Link to="/about" className={`text-xs font-medium ${linkCls}`}>
                 About Us
               </Link>
+              <Link to="/blog" className={`text-xs font-medium ${linkCls}`}>
+                Blogs
+              </Link>
             </nav>
           </div>
 

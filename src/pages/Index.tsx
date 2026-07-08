@@ -8,7 +8,6 @@ import CoreOffer from '../components/CoreOffer';
 import WhyItMatters from '../components/WhyItMatters';
 import HowItWorks from '../components/HowItWorks';
 import SupportingLayers from '../components/SupportingLayers';
-import CaseStudies from '../components/CaseStudies';
 import Thinking from '../components/Thinking';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
@@ -35,6 +34,13 @@ const Index = () => {
                 onClick={() => navigate('/about')}
               >
                 About Us
+              </Button>
+              <Button
+                variant="ghost"
+                className="text-[#2c3e2d] hover:bg-[#2c3e2d]/10"
+                onClick={() => navigate('/blog')}
+              >
+                Blogs
               </Button>
               
               {/* Social Media Links */}
@@ -100,6 +106,16 @@ const Index = () => {
                 >
                   About Us
                 </Button>
+                <Button
+                  variant="ghost"
+                  className="justify-start text-[#2c3e2d] hover:bg-[#2c3e2d]/10"
+                  onClick={() => {
+                    navigate('/blog');
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Blogs
+                </Button>
                 
                 {/* Mobile Social Links */}
                 <div className="flex items-center gap-4 px-3 py-2">
@@ -152,7 +168,6 @@ const Index = () => {
         <WhyItMatters />
         <HowItWorks />
         <SupportingLayers />
-        <CaseStudies />
         <Thinking />
         <CallToAction />
         <Footer />

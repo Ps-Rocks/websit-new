@@ -6,7 +6,6 @@ import { SplineSceneBasic } from '@/components/ui/demo';
 import { TextRevealByWord } from '@/components/ui/text-reveal';
 import CoreOffer from '../components/CoreOffer';
 import WhyItMatters from '../components/WhyItMatters';
-import CaseStudies from '../components/CaseStudies';
 import Footer from '../components/Footer';
 import Lenis from 'lenis';
 
@@ -71,6 +70,13 @@ export default function Automation() {
                 onClick={() => navigate('/about')}
               >
                 About Us
+              </Button>
+              <Button 
+                variant="ghost"
+                className="text-stone-300 hover:bg-[#10b981]/10 hover:text-white font-medium"
+                onClick={() => navigate('/blog')}
+              >
+                Blogs
               </Button>
               <Button 
                 variant="ghost"
@@ -148,6 +154,16 @@ export default function Automation() {
                   }}
                 >
                   About Us
+                </Button>
+                <Button 
+                  variant="ghost"
+                  className="justify-start text-stone-300 hover:bg-[#10b981]/10 hover:text-white"
+                  onClick={() => {
+                    navigate('/blog');
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Blogs
                 </Button>
                 <Button 
                   variant="ghost"
@@ -334,11 +350,6 @@ export default function Automation() {
         {/* Benefits (Why It Matters) */}
         <div className="bg-[#030303] border-b border-neutral-900">
           <WhyItMatters />
-        </div>
-
-        {/* Case Studies */}
-        <div className="bg-[#050505] border-b border-neutral-900">
-          <CaseStudies />
         </div>
 
         {/* CTA section (dark mode styled) */}

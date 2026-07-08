@@ -151,6 +151,13 @@ export default function Consulting() {
               <Button 
                 variant="ghost"
                 className="text-gray-700 hover:bg-[#2c3e2d]/10 font-medium"
+                onClick={() => navigate('/blog')}
+              >
+                Blogs
+              </Button>
+              <Button 
+                variant="ghost"
+                className="text-gray-700 hover:bg-[#2c3e2d]/10 font-medium"
                 onClick={() => navigate('/careers')}
               >
                 Careers
@@ -224,6 +231,16 @@ export default function Consulting() {
                   }}
                 >
                   About Us
+                </Button>
+                <Button 
+                  variant="ghost"
+                  className="justify-start text-gray-700 hover:bg-[#2c3e2d]/10"
+                  onClick={() => {
+                    navigate('/blog');
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Blogs
                 </Button>
                 <Button 
                   variant="ghost"
