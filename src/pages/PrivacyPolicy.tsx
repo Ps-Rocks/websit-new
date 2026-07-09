@@ -141,7 +141,7 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <p><strong>Opt-Out:</strong> You can opt out of our communications at any time by replying to our emails with your request or contacting us directly at theinsightfoundry@gmail.com.</p>
+                <p><strong>Opt-Out:</strong> You can opt out of our communications at any time by replying to our emails with your request or contacting us directly at office@theinsightfoundry.org.</p>
               </div>
             </AccordionContent>
           </AccordionItem>
@@ -187,7 +187,7 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div className="bg-[#2c3e2d] text-white rounded-lg p-4">
-                <p><strong>Exercise Your Rights:</strong> Contact us at theinsightfoundry@gmail.com for any data-related requests. We will respond within 30 days.</p>
+                <p><strong>Exercise Your Rights:</strong> Contact us at office@theinsightfoundry.org for any data-related requests. We will respond within 30 days.</p>
               </div>
             </AccordionContent>
           </AccordionItem>
@@ -240,7 +240,7 @@ const PrivacyPolicy = () => {
               <p>For any privacy-related concerns, questions, or requests, please contact us:</p>
               <div className="bg-stone-50 border border-stone-200 rounded-lg p-6 mt-4">
                 <h4 className="font-semibold text-[#2c3e2d] mb-2">The Insight Foundry</h4>
-                <p><strong>Email:</strong> <a href="mailto:theinsightfoundry@gmail.com" className="text-[#2c3e2d] hover:underline">theinsightfoundry@gmail.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:office@theinsightfoundry.org" className="text-[#2c3e2d] hover:underline">office@theinsightfoundry.org</a></p>
                 <p className="mt-2 text-sm text-gray-600">
                   We aim to respond to all privacy inquiries within 30 days.
                 </p>

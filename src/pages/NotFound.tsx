@@ -101,7 +101,7 @@ const NotFound = () => {
             </p>
             <Button 
               variant="secondary"
-              onClick={() => window.location.href = 'mailto:theinsightfoundry@gmail.com'}
+              onClick={() => window.location.href = 'mailto:office@theinsightfoundry.org'}
             >
               <Mail className="w-4 h-4 mr-2" />
               Contact Support

@@ -7,7 +7,7 @@ interface FooterProps {
 
 const Footer = ({ variant = 'light' }: FooterProps) => {
   const isDark = variant === 'dark';
-  const email = 'theinsightfoundry@gmail.com';
+  const email = 'office@theinsightfoundry.org';
 
   const linkCls = isDark
     ? 'text-white/50 hover:text-white transition-colors duration-200'

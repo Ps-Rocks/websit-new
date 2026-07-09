@@ -316,7 +316,7 @@ const InternshipTerms = () => {
 
           <section className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">19. Contact</h2>
-            <p>Official Email: <a href="mailto:theinsightfoundry@gmail.com" className="text-[#2c3e2d] hover:underline">theinsightfoundry@gmail.com</a></p>
+            <p>Official Email: <a href="mailto:office@theinsightfoundry.org" className="text-[#2c3e2d] hover:underline">office@theinsightfoundry.org</a></p>
             <p>Official Jurisdiction: Indore, Madhya Pradesh</p>
           </section>
 
