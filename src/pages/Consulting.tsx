@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { HeroScrollDemo } from '@/components/ui/demo-consulting';
 import { TextRevealByWord } from '@/components/ui/text-reveal';
 import { ZoomParallax } from '@/components/ui/zoom-parallax';
+import ConsultingTestimonials from '@/components/ConsultingTestimonials';
 import Footer from '../components/Footer';
 import Lenis from 'lenis';
 
@@ -406,6 +407,9 @@ export default function Consulting() {
             </div>
           </div>
         </section>
+
+        {/* Client Testimonials */}
+        <ConsultingTestimonials />
 
         {/* Consulting Call to Action */}
         <section className="py-20 md:py-28 bg-[#2c3e2d] text-white relative overflow-hidden">
