@@ -436,7 +436,7 @@ export default function Consulting() {
                 </div>
                 <div className="p-6 md:p-8">
                   <div className="flex flex-wrap items-center gap-3 mb-4">
-                    <div className="w-11 h-11 rounded-full overflow-hidden bg-stone-100 flex items-center justify-center">
+                    <div className="w-11 h-11 rounded-full overflow-hidden bg-[#0f172a] flex items-center justify-center p-2 shadow-sm shadow-[#0f172a]/30 ring-1 ring-white/10">
                       <img src="/lovable-uploads/bortex-logo.png" alt="BORTEX logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
