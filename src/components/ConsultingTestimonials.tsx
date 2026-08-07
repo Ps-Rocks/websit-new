@@ -54,7 +54,8 @@ const defaultTestimonials: Testimonial[] = [
     designation: "Founder",
     companyName: "Brand Cameo Works Pvt. Ltd.",
     portraitUrl: "/lovable-uploads/kavya-brand-cameo.jpg",
-    logoUrl: "/lovable-uploads/brand-cameo-logo.jpg"
+    logoUrl: "/lovable-uploads/brand-cameo-logo.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/kavya-nagesh-1460b9270/"
   }
 ];
 
