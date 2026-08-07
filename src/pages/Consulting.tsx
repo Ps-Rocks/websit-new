@@ -411,6 +411,75 @@ export default function Consulting() {
         {/* Client Testimonials */}
         <ConsultingTestimonials />
 
+        {/* Video Testimonials */}
+        <section className="py-20 md:py-28 bg-stone-50 border-t border-stone-200/50">
+          <div className="max-w-7xl mx-auto px-4 md:px-6">
+            <div className="text-center mb-14">
+              <p className="text-sm font-bold tracking-widest text-[#2c3e2d] uppercase mb-4">Video Testimonials</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-neutral-900">See the impact in our clients’ own words</h2>
+              <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed mt-4">
+                Short video stories from BORTEX and Brand Cameo showing how our GTM work translated into clarity, confidence, and momentum.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+              <div className="border border-stone-200 rounded-3xl overflow-hidden shadow-sm bg-white">
+                <div className="relative bg-black overflow-hidden aspect-video">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/r7hMKI2otX4"
+                    title="BORTEX Video Testimonial"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="p-6 md:p-8">
+                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-full overflow-hidden bg-stone-100 flex items-center justify-center">
+                      <img src="/lovable-uploads/bortex-logo.png" alt="BORTEX logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-stone-500 uppercase tracking-[0.25em]">BORTEX</p>
+                      <p className="text-lg font-semibold text-neutral-900">Founder video testimonial</p>
+                    </div>
+                  </div>
+                  <p className="text-neutral-600 leading-relaxed">
+                    Hear from BORTEX on how our market and GTM work helped them understand competitor positioning and move forward with confidence.
+                  </p>
+                </div>
+              </div>
+
+              <div className="border border-stone-200 rounded-3xl overflow-hidden shadow-sm bg-white">
+                <div className="relative bg-black overflow-hidden aspect-video">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/v1Pms3sBXtI"
+                    title="Brand Cameo Video Testimonial"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="p-6 md:p-8">
+                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-full overflow-hidden bg-stone-100 flex items-center justify-center">
+                      <img src="/lovable-uploads/brand-cameo-logo.jpg" alt="Brand Cameo logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-stone-500 uppercase tracking-[0.25em]">Brand Cameo</p>
+                      <p className="text-lg font-semibold text-neutral-900">Founder video testimonial</p>
+                    </div>
+                  </div>
+                  <p className="text-neutral-600 leading-relaxed">
+                    A short story from Brand Cameo on how our GTM strategy was collaborative, practical, and aligned to their long-term vision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Consulting Call to Action */}
         <section className="py-20 md:py-28 bg-[#2c3e2d] text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-[0.05] pointer-events-none">

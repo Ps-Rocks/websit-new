@@ -44,8 +44,17 @@ const defaultTestimonials: Testimonial[] = [
     founderName: "Mayank Vijay",
     designation: "Co-Founder",
     companyName: "ZipTier",
-    logoUrl: "/lovable-uploads/ziptier-logo.jpg"
-    ,linkedinUrl: "https://www.linkedin.com/in/vijaymayank736/"
+    logoUrl: "/lovable-uploads/ziptier-logo.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/vijaymayank736/"
+  },
+  {
+    id: 'kavya-brand-cameo',
+    quote: "The process was smooth, collaborative, and easy to work through. Prathmesh truly understood our venture and designed sample concepts that aligned with our vision, which added a lot of value.",
+    founderName: "Kavya",
+    designation: "Founder",
+    companyName: "Brand Cameo Works Pvt. Ltd.",
+    portraitUrl: "/lovable-uploads/kavya-brand-cameo.jpg",
+    logoUrl: "/lovable-uploads/brand-cameo-logo.jpg"
   }
 ];
 
@@ -162,19 +171,6 @@ export default function ConsultingTestimonials({ testimonials = defaultTestimoni
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* CTA Section */}
-        <div className="mt-16 md:mt-20 text-center">
-          <p className="text-gray-600 text-sm md:text-base mb-6">
-            Ready to become our next success story?
-          </p>
-          <button
-            className="bg-[#2c3e2d] hover:bg-[#1a2b1b] text-white px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg mobile-touch-button"
-            onClick={() => window.open('https://calendly.com/theinsightfoundry/30min', '_blank')}
-          >
-            Schedule Consultation
-          </button>
         </div>
       </div>
     </section>
