@@ -21,6 +21,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import InternshipTerms from "./pages/InternshipTerms";
 import BlogIndex from "./pages/BlogIndex";
 import Blog from "./pages/Blog";
+import TestimonialsPage from "./pages/TestimonialsPage";
 
 const queryClient = new QueryClient();
 
@@ -62,6 +63,7 @@ const AnimatedRoutes = () => {
         <Route path="/about" element={<PageWrapper><AboutUs /></PageWrapper>} />
         <Route path="/blog" element={<PageWrapper><BlogIndex /></PageWrapper>} />
         <Route path="/blog/startups" element={<PageWrapper><Blog /></PageWrapper>} />
+        <Route path="/testimonials" element={<PageWrapper><TestimonialsPage /></PageWrapper>} />
         <Route path="/privacy-policy" element={<PageWrapper><PrivacyPolicy /></PageWrapper>} />
         <Route path="/internship-terms" element={<PageWrapper><InternshipTerms /></PageWrapper>} />
         <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
