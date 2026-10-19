@@ -19,6 +19,12 @@ export default {
 		},
 		extend: {
 			colors: {
+				paper: '#f3f1eb',
+				ink: '#151515',
+				'muted-ink': '#5f5d57',
+				rule: '#d8d4c8',
+				brand: '#17604a',
+				'brand-deep': '#0e2e23',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -95,6 +101,9 @@ export default {
 						transform: "translate(-50%,-40%) scale(1)",
 					},
 				},
+			},
+			fontFamily: {
+				sans: ['Geist', 'Inter', 'system-ui', 'sans-serif'],
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',

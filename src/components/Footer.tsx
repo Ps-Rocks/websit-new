@@ -98,11 +98,11 @@ const Footer = ({ variant = 'light' }: FooterProps) => {
               Studio
             </p>
             <nav className="flex flex-col gap-3">
-              <Link to="/consulting" className={`text-xs font-medium ${linkCls}`}>
-                TIF Consulting
+              <Link to="/#services" className={`text-xs font-medium ${linkCls}`}>
+                Services
               </Link>
-              <Link to="/automation" className={`text-xs font-medium ${linkCls}`}>
-                TIF Automations
+              <Link to="/stories" className={`text-xs font-medium ${linkCls}`}>
+                Client Stories
               </Link>
               <Link to="/careers" className={`text-xs font-medium ${linkCls}`}>
                 Careers

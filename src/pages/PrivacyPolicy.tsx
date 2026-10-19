@@ -1,60 +1,42 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import Footer from '@/components/Footer';
+import { PageHeader, SiteShell } from '@/components/site/sections';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <SiteShell>
       {/* Header */}
-      <div className="bg-gradient-to-br from-white to-stone-50 py-8 md:py-12">
-        <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <Link to="/">
-            <Button variant="outline" className="mb-6 hover:bg-[#2c3e2d] hover:text-white transition-colors">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Privacy Policy
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Last updated: January 2025
-          </p>
-        </div>
-      </div>
+      <PageHeader eyebrow="Legal" title="Privacy policy" intro={<p>Last updated: January 2025</p>} />
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 md:px-6 py-12">
+      <div className="mx-auto max-w-[1240px] px-5 pb-24 md:px-8 md:pb-32 [&>*]:max-w-3xl">
         {/* Introduction */}
         <div className="mb-12">
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          <p className="text-[18px] text-ink/80 leading-relaxed mb-6">
             At The Insight Foundry, we take your privacy seriously and are committed to protecting your personal information. 
             This Privacy Policy explains how we collect, use, store, and protect your data when you interact with our website 
             and services. We comply with applicable data protection regulations, including the General Data Protection 
             Regulation (GDPR) and other relevant privacy laws.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-ink/80 leading-relaxed">
             By using our website or submitting information through our forms, you agree to the practices described in this policy.
           </p>
         </div>
 
         {/* Accordion Sections */}
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="border-t border-rule">
           {/* Information We Collect */}
-          <AccordionItem value="item-1" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-1" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               1. Information We Collect
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <div>
                 <h4 className="font-semibold mb-2">Personal Information:</h4>
                 <ul className="list-disc pl-6 space-y-1">
@@ -85,11 +67,11 @@ const PrivacyPolicy = () => {
           </AccordionItem>
 
           {/* How We Use Your Information */}
-          <AccordionItem value="item-2" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-2" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               2. How We Use Your Information
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <p>We use your information for the following purposes:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Contact and Communication:</strong> To reach out about your booking and confirm strategy session details</li>
@@ -98,17 +80,17 @@ const PrivacyPolicy = () => {
                 <li><strong>Legal Compliance:</strong> To meet our legal obligations and protect our legitimate business interests</li>
               </ul>
               <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-4">
-                <p className="font-semibold text-[#2c3e2d]">We do not sell your data to any third parties.</p>
+                <p className="font-semibold text-brand">We do not sell your data to any third parties.</p>
               </div>
             </AccordionContent>
           </AccordionItem>
 
           {/* How We Store Your Data */}
-          <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-3" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               3. How We Store Your Data
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <div>
                 <h4 className="font-semibold mb-2">Security Measures:</h4>
                 <ul className="list-disc pl-6 space-y-1">
@@ -126,11 +108,11 @@ const PrivacyPolicy = () => {
           </AccordionItem>
 
           {/* Emails and Communication */}
-          <AccordionItem value="item-4" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-4" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               4. Emails and Communication
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <div>
                 <h4 className="font-semibold mb-2">Communication Types:</h4>
                 <ul className="list-disc pl-6 space-y-1">
@@ -147,11 +129,11 @@ const PrivacyPolicy = () => {
           </AccordionItem>
 
           {/* Third-Party Services */}
-          <AccordionItem value="item-5" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-5" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               5. Third-Party Services
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <p>We may use trusted third-party tools to enhance our services:</p>
               <div>
                 <h4 className="font-semibold mb-2">Services We May Use:</h4>
@@ -169,11 +151,11 @@ const PrivacyPolicy = () => {
           </AccordionItem>
 
           {/* Your Rights */}
-          <AccordionItem value="item-6" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-6" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               6. Your Rights
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <p>Under applicable data protection laws, you have the following rights:</p>
               <div>
                 <h4 className="font-semibold mb-2">Data Subject Rights:</h4>
@@ -193,11 +175,11 @@ const PrivacyPolicy = () => {
           </AccordionItem>
 
           {/* Cookies */}
-          <AccordionItem value="item-7" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-7" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               7. Cookies and Tracking
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <div>
                 <h4 className="font-semibold mb-2">Cookie Usage:</h4>
                 <ul className="list-disc pl-6 space-y-1">
@@ -214,11 +196,11 @@ const PrivacyPolicy = () => {
           </AccordionItem>
 
           {/* Updates to This Policy */}
-          <AccordionItem value="item-8" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-8" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               8. Updates to This Policy
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <p>
                 This Privacy Policy may be updated occasionally to reflect changes in our practices, technology, 
                 legal requirements, or other factors. We will notify users of any material changes by posting 
@@ -232,16 +214,16 @@ const PrivacyPolicy = () => {
           </AccordionItem>
 
           {/* Contact Us */}
-          <AccordionItem value="item-9" className="border border-gray-200 rounded-lg px-6">
-            <AccordionTrigger className="text-xl font-semibold text-[#2c3e2d] hover:no-underline">
+          <AccordionItem value="item-9" className="border-b border-rule">
+            <AccordionTrigger className="text-left text-xl font-medium tracking-tight text-ink hover:no-underline">
               9. Contact Us
             </AccordionTrigger>
-            <AccordionContent className="text-gray-700 space-y-4 pt-4">
+            <AccordionContent className="text-ink/80 space-y-4 pt-4">
               <p>For any privacy-related concerns, questions, or requests, please contact us:</p>
-              <div className="bg-stone-50 border border-stone-200 rounded-lg p-6 mt-4">
-                <h4 className="font-semibold text-[#2c3e2d] mb-2">The Insight Foundry</h4>
-                <p><strong>Email:</strong> <a href="mailto:office@theinsightfoundry.org" className="text-[#2c3e2d] hover:underline">office@theinsightfoundry.org</a></p>
-                <p className="mt-2 text-sm text-gray-600">
+              <div className="border-l-2 border-brand pl-6 p-6 mt-4">
+                <h4 className="font-semibold text-brand mb-2">The Insight Foundry</h4>
+                <p><strong>Email:</strong> <a href="mailto:office@theinsightfoundry.org" className="text-brand hover:underline">office@theinsightfoundry.org</a></p>
+                <p className="mt-2 text-sm text-muted-ink">
                   We aim to respond to all privacy inquiries within 30 days.
                 </p>
               </div>
@@ -250,15 +232,13 @@ const PrivacyPolicy = () => {
         </Accordion>
 
         {/* Footer Note */}
-        <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-          <p className="text-gray-600">
+        <div className="mt-12 pt-8 border-t border-rule text-center">
+          <p className="text-muted-ink">
             This Privacy Policy is effective as of the last updated date shown above and applies to all users of The Insight Foundry website and services.
           </p>
         </div>
       </div>
-
-      <Footer />
-    </div>
+    </SiteShell>
   );
 };
 

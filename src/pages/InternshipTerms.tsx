@@ -1,40 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import Footer from '@/components/Footer';
+import { PageHeader, SiteShell } from '@/components/site/sections';
 
 const InternshipTerms = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="bg-gradient-to-br from-white to-stone-50 py-8 md:py-12">
-        <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <Link to="/">
-            <Button variant="outline" className="mb-6 hover:bg-[#2c3e2d] hover:text-white transition-colors">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Internship Terms and Conditions
-          </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Effective Date: June 2026
-          </p>
-        </div>
-      </div>
+    <SiteShell>
+      <PageHeader eyebrow="Legal" title="Internship terms and conditions" intro={<p>Effective Date: June 2026</p>} />
 
-      <div className="max-w-4xl mx-auto px-4 md:px-6 py-12">
-        <div className="space-y-10 text-gray-700 leading-relaxed">
-          <section className="space-y-4">
+      <div className="mx-auto max-w-[1240px] px-5 pb-24 md:px-8 md:pb-32 [&>*]:max-w-3xl">
+        <div className="space-y-10 text-ink/80 leading-relaxed">
+          <section className="space-y-4 border-t border-rule pt-8">
             <p>
               These Terms and Conditions govern all internship engagements undertaken with The Insight
               Foundry unless expressly superseded in writing.
             </p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">1. Organization Status</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">1. Organization Status</h2>
             <p>The Insight Foundry (“TIF”) is a student-led consulting initiative operating from Indore, Madhya Pradesh.</p>
             <p>
               The Insight Foundry currently operates as a student-led consulting initiative and not as a registered
@@ -52,8 +34,8 @@ const InternshipTerms = () => {
             </p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">2. Nature of the Internship</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">2. Nature of the Internship</h2>
             <p>The internship is intended solely as a learning and development opportunity.</p>
             <p>Participants may be assigned projects involving:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -75,8 +57,8 @@ const InternshipTerms = () => {
             </p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">3. Duration</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">3. Duration</h2>
             <p>The standard internship duration shall be four (4) weeks.</p>
             <p>TIF may, at its sole discretion, extend an internship period based on:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -88,8 +70,8 @@ const InternshipTerms = () => {
             <p>No participant shall have a right to automatic extension.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">4. Unpaid Nature of the Program</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">4. Unpaid Nature of the Program</h2>
             <p>The internship is unpaid.</p>
             <p>Participants acknowledge and agree that:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -116,8 +98,8 @@ const InternshipTerms = () => {
             </p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">5. Eligibility</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">5. Eligibility</h2>
             <p>Participants must:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Be at least eighteen (18) years of age.</li>
@@ -128,8 +110,8 @@ const InternshipTerms = () => {
             <p>Any misrepresentation may result in immediate termination.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">6. Attendance Requirements</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">6. Attendance Requirements</h2>
             <p>The internship is designed to be flexible.</p>
             <p>Participants are expected to:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -148,8 +130,8 @@ const InternshipTerms = () => {
             </p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">7. Certificate of Completion</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">7. Certificate of Completion</h2>
             <p>A Certificate of Completion may be issued where:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>The participant satisfies the attendance requirement;</li>
@@ -160,8 +142,8 @@ const InternshipTerms = () => {
             <p>The issuance of certificates remains subject to TIF’s final review.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">8. Letter of Recommendation</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">8. Letter of Recommendation</h2>
             <p>Letters of Recommendation are not automatically granted.</p>
             <p>A Letter of Recommendation may be issued solely at the discretion of TIF based on:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -174,8 +156,8 @@ const InternshipTerms = () => {
             <p>No participant shall possess a contractual entitlement to a Letter of Recommendation.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">9. Confidentiality</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">9. Confidentiality</h2>
             <p>Participants may receive access to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Internal documents</li>
@@ -198,8 +180,8 @@ const InternshipTerms = () => {
             <p>Confidentiality obligations shall survive indefinitely following completion or termination of the internship.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">10. Intellectual Property</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">10. Intellectual Property</h2>
             <p>All work produced during the internship shall be the exclusive property of TIF.</p>
             <p>This includes:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -220,8 +202,8 @@ const InternshipTerms = () => {
             <p>Participants irrevocably assign all rights, title, and interest in such materials to TIF.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">11. Portfolio Rights</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">11. Portfolio Rights</h2>
             <p>
               Participants may include work completed during the internship in portfolios, resumes, LinkedIn profiles, and applications only where:
             </p>
@@ -233,8 +215,8 @@ const InternshipTerms = () => {
             <p>TIF may refuse permission where disclosure could harm client interests or organizational interests.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">12. LinkedIn Representation</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">12. LinkedIn Representation</h2>
             <p>Participants may represent themselves as “Associate Consultant Intern – The Insight Foundry” or any other title officially assigned by TIF.</p>
             <p>Participants shall not:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -245,8 +227,8 @@ const InternshipTerms = () => {
             </ul>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">13. Non-Solicitation</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">13. Non-Solicitation</h2>
             <p>
               For a period of twelve (12) months following completion or termination of the internship, participants shall not knowingly:
             </p>
@@ -259,8 +241,8 @@ const InternshipTerms = () => {
             <p>This clause shall not prevent general networking or ordinary professional interactions.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">14. Code of Conduct</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">14. Code of Conduct</h2>
             <p>Participants shall:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Act professionally;</li>
@@ -274,13 +256,13 @@ const InternshipTerms = () => {
             <p>Misconduct may result in immediate termination.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">15. Social Media Policy</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">15. Social Media Policy</h2>
             <p>Participants shall not publish internal screenshots, client information, meeting recordings, internal communications, or confidential project details without prior written approval.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">16. Immediate Termination</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">16. Immediate Termination</h2>
             <p>
               TIF may terminate an internship immediately, without notice and without assigning any reason.
             </p>
@@ -299,8 +281,8 @@ const InternshipTerms = () => {
             <p>Termination decisions shall be final.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">17. Limitation of Liability</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">17. Limitation of Liability</h2>
             <p>
               To the maximum extent permitted by law, TIF shall not be liable for indirect losses, consequential losses,
               lost opportunities, academic outcomes, employment outcomes, or career outcomes.
@@ -308,20 +290,20 @@ const InternshipTerms = () => {
             <p>Participation remains voluntary.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">18. Dispute Resolution</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">18. Dispute Resolution</h2>
             <p>Any dispute arising from the internship shall first be attempted to be resolved amicably.</p>
             <p>Failing such resolution, the courts of Indore, Madhya Pradesh shall have exclusive jurisdiction.</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">19. Contact</h2>
-            <p>Official Email: <a href="mailto:office@theinsightfoundry.org" className="text-[#2c3e2d] hover:underline">office@theinsightfoundry.org</a></p>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">19. Contact</h2>
+            <p>Official Email: <a href="mailto:office@theinsightfoundry.org" className="text-brand hover:underline">office@theinsightfoundry.org</a></p>
             <p>Official Jurisdiction: Indore, Madhya Pradesh</p>
           </section>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">20. Acceptance</h2>
+          <section className="space-y-4 border-t border-rule pt-8">
+            <h2 className="text-[1.5rem] font-medium tracking-[-0.02em] text-ink md:text-[1.8rem]">20. Acceptance</h2>
             <p>
               By accepting an internship offer, attending onboarding, participating in meetings, accessing organizational
               resources, or performing internship-related activities, the participant acknowledges that they have read,
@@ -329,16 +311,14 @@ const InternshipTerms = () => {
             </p>
           </section>
 
-          <div className="mt-10 pt-8 border-t border-gray-200 text-gray-600 text-sm">
+          <div className="mt-10 pt-8 border-t border-rule text-muted-ink text-sm">
             <p>
               Note: This page is intentionally not linked from the main site navigation or footer. It is only accessible via direct URL.
             </p>
           </div>
         </div>
       </div>
-
-      <Footer />
-    </div>
+    </SiteShell>
   );
 };
 
