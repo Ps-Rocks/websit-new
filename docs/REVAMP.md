@@ -56,7 +56,7 @@ AI crawlers (GPTBot, ClaudeBot, PerplexityBot and others) generally do not run J
 - **Structured data** (`src/lib/seo.ts`): `ProfessionalService` with the founders on every page, `FAQPage` on the homepage and articles, `BlogPosting` and `BreadcrumbList` on articles, `AboutPage` and `CollectionPage`.
 - `sitemap.xml` and `llms.txt` are generated at build time from the same data.
 - `robots.txt` explicitly allows the main search and AI crawlers.
-- `vercel.json` uses `cleanUrls`, so `/about` is served from `about.html` before the SPA fallback.
+- `vercel.json` uses `cleanUrls`, so `/about` is served from `about.html` before the SPA fallback. With `cleanUrls` on, the fallback rewrite must point to `/`, not `/index.html`, or unmatched routes return Vercel's 404. Old URLs (`/consulting`, `/automation`, `/testimonials`) are permanent server-side redirects.
 - Hard-coded and inaccurate schema was removed from `index.html` (a fake site-search action, US location tags).
 
 ### Blog

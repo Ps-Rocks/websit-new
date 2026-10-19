@@ -1,9 +1,14 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/consulting", "destination": "/#services", "permanent": true },
+    { "source": "/automation", "destination": "/#services", "permanent": true },
+    { "source": "/testimonials", "destination": "/stories", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ]
 }
