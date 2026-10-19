@@ -1,4 +1,30 @@
-# Welcome to your Lovable project
+# The Insight Foundry website
+
+Source for [theinsightfoundry.org](https://theinsightfoundry.org): a strategy and automation studio for early-stage founders.
+
+Built with Vite, React, TypeScript, Tailwind CSS and Framer Motion, and deployed on Vercel.
+
+> **October 2026 revamp:** the site was rebuilt as one unified offer with client stories, a new design system, and SEO and AI-search (GEO) prerendering. See [docs/REVAMP.md](docs/REVAMP.md) for what changed, how it works, how to edit content and how to roll back. The previous version is tagged `pre-revamp`.
+
+## Quick start
+
+```sh
+npm install
+npm run dev      # http://localhost:8080
+npm run build    # production build + static prerender into dist/
+npm run preview  # serve the production build
+```
+
+## Where things live
+
+- Business content (services, FAQ, team, client stories): `src/lib/site.ts`
+- Blog articles: `src/lib/posts.ts`, `src/lib/posts-library.ts`
+- Page metadata and structured data: `src/lib/seo.ts`
+- Prerender, sitemap and llms.txt: `scripts/prerender.ts`
+
+---
+
+## Editing with Lovable
 
 ## Project info
 
